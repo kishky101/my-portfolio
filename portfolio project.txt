@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <title>Adebayo Marzuq</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#welcome-section" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Project</a></li>
+          <li><a href="#contact-link" class="nav-link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <div class="intro">
+        <h1>Hey I am Marzuq</h1>
+        <p>a web developer</p>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="project-title">
+          <h2>These are some of my projects</h2>
+          <hr>
+        </div>
+        <div class="project-container">
+          <div class="project-tile"><a href="https://www.freecodecamp.org/kishky101" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+          <div class="project-tile"><a href="">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+          <div class="project-tile"><a href="">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+          <div class="project-tile"><a href="">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+          <div class="project-tile"><a href="">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+          <div class="project-tile"><a href="">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Dr.Norman">
+            <p><span class="code"><</span> Tribute page <span class="code">/></span></p>
+            </a></div>
+        </div>
+        <a href="https://github.com/kishy101" target="_blank" id="profile-link"><button>Show all <i class="fas fa-chevron-right"></i></button></a>
+      </section>
+      <section id="contact-link">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        <div class="contact-medium">
+          <a href="">
+            <i class="fab fa-facebook-square"></i> Facebook
+          </a>
+          <a href="">
+            <i class="fab fa-github"></i> github
+          </a>
+          <a href="">
+            <i class="fab fa-twitter"></i> twitter
+          </a>
+          <a href="">
+            <i class="fas fa-at"></i> send a mail
+          </a>
+          <a href="">
+            <i class="fas fa-mobile-alt"></i> call me
+          </a>
+        </div>
+      </section>
+      <div class="divider"></div>
+    </main>
+    <footer>
+      <p>&copy; Created by Kishky</p>
+    </footer>
+  </body>
+</html>
+CSS
+:root {
+  --transition: all 0.5s ease-in-out;
+  --white-color: #fff;
+  --red-color: #BE3144;
+  --gray-color: #3a3d40;
+  --black-color: #181719;
+  --blue-color: #45567D;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  letter-spacing: 1;
+}
+#navbar {
+  width: 100%;
+  background-color: var(--red-color);
+  position: fixed;
+  top: 0;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+nav ul li {
+  font-size: 1.5rem;
+  margin: 1rem;
+  transition: var(--transition);
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+nav ul li:hover {
+  transform: skew(10deg, 10deg);
+}
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: 
+  repeating-linear-gradient(
+    45deg, 
+    var(--gray-color) 0%,
+    var(--gray-color) 2%,
+    transparent 2%,
+    var(--black-color) 4%),
+    repeating-linear-gradient(
+     
+    var(--gray-color) 0%,
+    var(--gray-color) 2%,
+    var(--black-color) 2%,
+    var(--black-color) 4%)
+    /* 62deg, 
+  #3a3d40 0%, 
+  #181719 100%); */
+}
+#welcome-section .intro {
+  text-align: center;
+  background-color: var(--gray-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px 1px var(--black-color);
+  transition: var(--transition)
+}
+#welcome-section .intro:hover {
+  transform: scale(1.1)
+}
+#welcome-section h1 {
+  font-size: 4rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: var(--white-color);
+}
+#welcome-section p {
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--red-color);
+}
+#projects {
+  width: 100%;
+  background-color: var(--blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.project-title {
+  max-width: 650px;
+  margin: 4rem auto  0 auto;
+  color: var(--white-color);
+  text-align: center;
+  font-family: Raleway, sans-serif;
+}
+.project-title h2 {
+  font-size: 2rem
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%; 
+  max-width: 1280px;
+  justify-content: center;
+}
+.project-tile {
+ width: 100%;
+  max-width: 400px;
+  height: 400px;
+  margin: 1rem auto;
+  background-color: var(--gray-color);
+}
+#projects a {
+  display: block;
+  margin: 0 auto 2rem auto;
+  text-decoration: none;
+  color: var(--white-color)
+}
+.project-tile img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.project-tile p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.project-tile p .code {
+  color: var(--gray-color);
+  transition: var(--transition);
+  font-weight: bold;
+}
+.project-tile:hover p .code {
+  color: var(--red-color);
+}
+button {
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-family: Poppins, sans-serif;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--red-color);
+}
+button i {
+  transition: var(--transition)
+}
+button:hover i {
+  margin-left: 0.2rem;
+}
+#contact-link {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+    62deg, 
+  var(--gray-color) 0%, 
+  var(--black-color) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  padding: 3rem;
+  text-align: center;
+}
+#contact-link h2 {
+  font-size: 4rem;
+  font-family: Raleway, sans-serif;
+}
+#contact-link p {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.contact-medium {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.contact-medium a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  margin: 1rem;
+  transition: var(--transition);
+}
+.contact-medium a:hover {
+  transform: translateY(10px);
+  color: var(--red-color);
+}
+.divider {
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--red-color);
+}
+footer {
+  padding: 2rem;
+  background: linear-gradient(
+    62deg, 
+  var(--gray-color) 0%, 
+  var(--black-color) 100%);
+  color: var(--white-color);
+  text-align: right;
+}
+@media (max-width: 750px) {
+  .project-container {
+    display: block;
+    padding: 1rem;
+  }
+  .project-tile {
+    max-width: 700px;
+    margin: 1rem auto;
+  }
+  
+}
+@media (max-width: 500px) {
+  #welcome-section .intro:hover {
+    transform: scale(1)
+  }
+}
+@media (max-width: 600px) {
+  nav ul li {
+    font-size: 1.2rem;
+  }
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+  #welcome-section p {
+    font-size: 1.5rem;
+  }
+  .project-tile p {
+  font-size: 1.2rem;
+  }
+  #contact-link h2 {
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+  }
+  #contact-link p {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .contact-medium a {
+    font-size: 1rem;
+  }
+  /* .project-container {
+    padding: 1rem;
+  }
+  .project-tile {
+    max-width: 600px;
+    margin: 1rem auto;
+  } */
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 0rem;
+  }
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  button {
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  }
+}
