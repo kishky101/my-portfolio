@@ -112,6 +112,7 @@
   }
   #welcome-section .about.slide4 {
     bottom: 150px;
+    right: 50px;
     animation: slide 1.3s ease-in-out ;
   }
   #welcome-section .about.slide5 {
@@ -133,13 +134,16 @@
     }
   }
 
-  @media (min-width: 1080px) {
+  /* @media (min-width: 1080px) {
     #welcome-section .about.slide4 {
       right: 50px;
     }
-  }
+  } */
   @media (max-width: 1080px) {
-    #welcome-section .about.slide1 {
+    #welcome-section .about {
+      display: none;
+    }
+    /* #welcome-section .about.slide1 {
       display: none;
     }
     #welcome-section .about.slide2 {
@@ -158,7 +162,7 @@
     #welcome-section .about.slide6 {
       left: 50px;
       top: 150px;
-    }
+    } */
 
   }
 
